@@ -1,5 +1,11 @@
 # Revision history for Chimpanzee
 
-## 0.1.0.0 -- 2021-mm-dd
+## 1.0.1 -- 2021-08-08
 
-* First version. Released on an unsuspecting world.
+First version. Released on an unsuspecting world.
+
+## New Cipher
+
+- Atbash Cipher
+- Caesar Cipher
+- Rot13 Cipher
