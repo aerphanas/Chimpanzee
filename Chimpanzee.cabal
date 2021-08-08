@@ -1,8 +1,8 @@
 cabal-version:      2.4
 name:               Chimpanzee
-version:            0.1.0.0
+version:            1.0.1
 synopsis:           Haskell Algorithm Library
-description:        Implementation of Algorithm on Haskell Programming Language
+description:        This project aims to implement an algorithm that can be used for anything.
 homepage:           https://github.com/DevCapacitor/Chimpanzee
 bug-reports:        https://github.com/DevCapacitor/Chimpanzee/issues
 copyright:          DevCapacitor 2021
@@ -10,7 +10,7 @@ license:            BSD-3-Clause
 license-file:       LICENSE
 author:             DevCapacitor
 maintainer:         d.15f@yahoo.com
-category:           Data
+category:           Cryptography
 extra-source-files:
                     CHANGELOG.md
                     README.md
