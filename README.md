@@ -1,12 +1,15 @@
 # Chimpanzee
 
-[![Haskell CI](https://github.com/DevCapacitor/Chimpanzee/actions/workflows/haskell.yml/badge.svg)](https://github.com/DevCapacitor/Chimpanzee/actions/workflows/haskell.yml) [![License](https://img.shields.io/badge/License-BSD--3--Clause-important)](https://github.com/DevCapacitor/Chimpanzee/blob/main/LICENSE)
-![Haskell Language](https://img.shields.io/badge/Haskell-Haskell2010-informational)  ![Cabal](https://img.shields.io/badge/Cabal-3.2-informational)  ![GHC](https://img.shields.io/badge/GHC-8.10.3-informational)  ![Version](https://img.shields.io/badge/Chimpanzee-0.1.0.0-informational)
+[![Build](https://github.com/aerphanas/Chimpanzee/actions/workflows/haskell.yml/badge.svg)](https://github.com/aerphanas/Chimpanzee/actions/workflows/haskell.yml)
+[![License](https://img.shields.io/badge/License-BSD--3--Clause-important)](https://github.com/DevCapacitor/Chimpanzee/blob/main/LICENSE)
+![Haskell Language](https://img.shields.io/badge/Haskell-Haskell2010-informational)
+![Cabal](https://img.shields.io/badge/Cabal-3.2-informational)
+![GHC](https://img.shields.io/badge/GHC-8.10.3-informational)
+![Version](https://img.shields.io/badge/Chimpanzee-0.1.0.0-informational)
 
 ## Table of contents
 
 - [Chimpanzee](#chimpanzee)
-  - [Table of contents](#table-of-contents)
   - [Description](#description)
   - [Cryptography](#cryptography)
     - [Classic cryptography](#classic-cryptography)
