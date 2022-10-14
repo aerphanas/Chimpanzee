@@ -2,7 +2,7 @@ module Main(main)where
 
 import Atbash
 import Caesar
-import  Rot13
+import Rot13
 
 main :: IO()
 main = do

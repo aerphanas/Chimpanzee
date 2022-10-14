@@ -3,13 +3,13 @@ name:               Chimpanzee
 version:            1.0.1
 synopsis:           Haskell Algorithm Library
 description:        This project aims to implement an algorithm that can be used for anything.
-homepage:           https://github.com/DevCapacitor/Chimpanzee
-bug-reports:        https://github.com/DevCapacitor/Chimpanzee/issues
-copyright:          DevCapacitor 2021
+homepage:           https://github.com/aerphanas/Chimpanzee
+bug-reports:        https://github.com/aerphanas/Chimpanzee/issues
+copyright:          aerphanas 2022
 license:            BSD-3-Clause
 license-file:       LICENSE
-author:             DevCapacitor
-maintainer:         d.15f@yahoo.com
+author:             aerphanas
+maintainer:         muhamadaviv14@gmail.com
 category:           Cryptography
 extra-source-files:
                     CHANGELOG.md
@@ -21,7 +21,7 @@ library
                         Caesar
     hs-source-dirs:     src
     default-language:   Haskell2010
-    build-depends:      base ^>=4.14.1.0
+    build-depends:      base ^>=4.16.3.0
     -- Modules included in this library but not exported.
     -- other-modules:
     -- LANGUAGE extensions used by modules in this package.
@@ -33,4 +33,4 @@ test-suite test
     type:               exitcode-stdio-1.0
     default-language:   Haskell2010
     build-depends:      Chimpanzee,
-                        base ^>=4.14.1.0
+                        base ^>=4.16.3.0

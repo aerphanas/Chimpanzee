@@ -5,7 +5,6 @@
 ## Daftar isi
 
 - [Chimpanzee](#chimpanzee)
-  - [Daftar isi](#daftar-isi)
   - [Deskripsi](#deskripsi)
   - [Kriptografi](#kriptografi)
     - [Era Kelasik](#era-kelasik)
@@ -74,7 +73,7 @@ untuk saat ini jika ingin menggunakan Library ini anda bisa clone repo menggunak
 ```sh
 git clone https://github.com/DevCapacitor/Chimpanzee.git
 ```
-
+@ext:berberman.vscode-cabal-fmt
 dan membangun Library dengan command
 
 ### Build
