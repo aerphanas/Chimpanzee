@@ -3,7 +3,7 @@
 - Atbash (done)
 - Caesar (done)
 - Rot13 (done)
-- Affine (WIP)
+- Affine (done)
 - Keyword
 - Railfence
 - Scytale
