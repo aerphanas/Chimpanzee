@@ -1,7 +1,7 @@
 # Chimpanzee
 
-[![Build](https://github.com/aerphanas/Chimpanzee/actions/workflows/haskell.yml/badge.svg)](https://github.com/aerphanas/Chimpanzee/actions/workflows/haskell.yml)
-[![License](https://img.shields.io/badge/License-BSD--3--Clause-important)](https://github.com/DevCapacitor/Chimpanzee/blob/main/LICENSE)
+[![Haskell CI](https://github.com/aerphanas/Chimpanzee/actions/workflows/haskell.yml/badge.svg)](https://github.com/aerphanas/Chimpanzee/actions/workflows/haskell.yml)
+[![License](https://img.shields.io/badge/License-BSD--3--Clause-important)](https://github.com/DevCapacitor/aerphanas/blob/main/LICENSE)
 ![Haskell Language](https://img.shields.io/badge/Haskell-Haskell2010-informational)
 ![Cabal](https://img.shields.io/badge/Cabal-3.2-informational)
 ![GHC](https://img.shields.io/badge/GHC-8.10.3-informational)
@@ -16,6 +16,7 @@
       - [Atbash](#atbash)
       - [Caesar](#caesar)
       - [Rot13](#rot13)
+      - [Affine](#affine)
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
     - [Build](#build)
@@ -25,6 +26,8 @@
 ## Description
 
 This project aims to implement an algorithm that can be used for anything, this project is licensed bsd 3 clauses
+
+---
 
 ## Cryptography
 
@@ -62,14 +65,26 @@ Rot13 stands for "rotate by 13 places" This cipher has characteristics like Caes
 |------|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
 |Cipher|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|A|B|C|D|E|F|G|H|i|J|K|L|M|
 
+### Affine
+
+affine is a cipher of the type [monoalphabetic substitution cipher](https://en.wikipedia.org/wiki/Substitution_cipher), where numbers are changed or encrypted using mathematical formulas/functions and changed back with mathematical formulas/functions, which means that the encrypted letters are basically substitution letters, it has the disadvantage of all substitution passwords. Each letter uses the function Fx = (a * x + b) mod 26 where b is the number of shifts, therefore the name of this cipher may be inspired by [Affine transformation](https://en.wikipedia.org/wiki/Affine_transformation), if we use 5 as 'a' and 8 as 'b' then the Affine encryption table is :
+
+|Plain |A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|
+|------|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
+|Cipher|I|N|S|X|C|H|M|R|W|B|G|L|Q|V|A|F|K|P|U|Z|E|J|O|T|Y|D|
+
+---
+
 ## Prerequisites
 
 to build this software, you must have:
 
 |Package|Minimum Version|
 |-|-|
-|GHC|8.10.3|
-|Cabal|2.4|
+|GHC|9.2.4|
+|Cabal|3.6|
+
+---
 
 ## Setup
 
@@ -94,7 +109,9 @@ cabal build
 ```sh
 cabal run test
 ```
+---
 
 ## References
 
 - [Wikipedia](https://www.wikipedia.org)
+- [Crypto Corner](https://crypto.interactive-maths.com/)

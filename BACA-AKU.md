@@ -1,6 +1,10 @@
 # Chimpanzee
 
-[![Haskell CI](https://github.com/DevCapacitor/Chimpanzee/actions/workflows/haskell.yml/badge.svg)](https://github.com/DevCapacitor/Chimpanzee/actions/workflows/haskell.yml) [![Lisensi](https://img.shields.io/badge/Lisensi-BSD--3--Clause-important)](https://github.com/DevCapacitor/Chimpanzee/blob/main/LICENSE)  ![Haskell Language](https://img.shields.io/badge/Haskell-Haskell2010-informational)  ![Cabal](https://img.shields.io/badge/Cabal-3.2-informational)  ![GHC](https://img.shields.io/badge/GHC-8.10.3-informational)  ![Version](https://img.shields.io/badge/Chimpanzee-0.1.0.0-informational)
+[![Haskell CI](https://github.com/aerphanas/Chimpanzee/actions/workflows/haskell.yml/badge.svg)](https://github.com/aerphanas/Chimpanzee/actions/workflows/haskell.yml)
+[![Lisensi](https://img.shields.io/badge/Lisensi-BSD--3--Clause-important)](https://github.com/aerphanas/Chimpanzee/blob/main/LICENSE)
+![Haskell Language](https://img.shields.io/badge/Haskell-Haskell2010-informational)  ![Cabal](https://img.shields.io/badge/Cabal-3.6-informational)
+![GHC](https://img.shields.io/badge/GHC-9.2.4-informational)
+![Version](https://img.shields.io/badge/Chimpanzee-0.1.0.0-informational)
 
 ## Daftar isi
 
@@ -11,6 +15,7 @@
       - [Atbash](#atbash)
       - [Caesar](#caesar)
       - [Rot13](#rot13)
+      - [Affine](#affine)
   - [Syarat](#syarat)
   - [Setup](#setup)
     - [Build](#build)
@@ -21,11 +26,13 @@
 
 Project ini bertujuan untuk mengimplementasikan sebuah algoritma yang dapat digunakan untuk apasaja, projek ini berlisensi bsd 3 clause
 
+---
+
 ## Kriptografi
 
 kriptografi adalah proses mengubah kalimat agar tidak dapat dibaca dan sebaliknya, pada awalnya kriptografi digunakan dalam urusan militer dan ditujukan untuk menyembunykan informasi agar musuh tidak dapat membacanya, kata cryptography dalam Romanization of Greek yaitu kryptós yanp memiliki arti "hidden, secret"; and γράφειν graphein yang memiliki arti "to write", atau -λογία -logia yang memiliki arti "study".
 
-### Era Kelasik
+## Era Klasik
 
 kelasik era di mulai dari 1900 BC, ditemukan sebuah kriptografi di sebuah makam di the Old Kingdom of Egypt circa, namun tidak digunakan untuk tujuan komunikasi, barulah pada 1500 BC, ditemukan sebuah substitusi simpel, maka cryptografi dimulai antara 600 BC sampai 500 BC
 
@@ -57,15 +64,25 @@ Rot13 kepanjangan dari "rotate by 13 places" cipher ini memiliki karakteristik s
 |------|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
 |Cipher|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|A|B|C|D|E|F|G|H|i|J|K|L|M|
 
+### Affine
+
+affine adalah cipher yang bertipe [monoalphabetic substitution cipher](https://en.wikipedia.org/wiki/Substitution_cipher), dimana angka-angka di ubah atau di enkripsi menggunakan rumus/fungsi matematika dan di ubah kembali dengan rumus/fungsi matematika, yang berarti huruf yang di enkripsi pada dasarnya adalah huruf substitusi, ia memiliki kelemahan dari semua sandi substitusi. Setiap huruf menggunakan fungsi Fx = (a * x + b) mod 26 dimana b adalah jumlah pergeseran, karna demikian nama cipher ini mungkin terinspirasi dari [Affine transformation](https://en.wikipedia.org/wiki/Affine_transformation), bila kita menggunakan 5 sebagai 'a' dan 8 sebagai 'b' maka tabel enkripsi Affine adalah :
+
+|Plain |A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|
+|------|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
+|Cipher|I|N|S|X|C|H|M|R|W|B|G|L|Q|V|A|F|K|P|U|Z|E|J|O|T|Y|D|
+
+---
 ## Syarat
 
 untuk build software ini, anda harus memiliki :
 
 |Package|Minimum Version|
 |-|-|
-|GHC|8.10.3|
-|Cabal|2.4|
+|GHC|9.2.4|
+|Cabal|3.6|
 
+---
 ## Setup
 
 untuk saat ini jika ingin menggunakan Library ini anda bisa clone repo menggunakan command :
@@ -73,7 +90,7 @@ untuk saat ini jika ingin menggunakan Library ini anda bisa clone repo menggunak
 ```sh
 git clone https://github.com/DevCapacitor/Chimpanzee.git
 ```
-@ext:berberman.vscode-cabal-fmt
+
 dan membangun Library dengan command
 
 ### Build
@@ -89,7 +106,8 @@ cabal build
 ```sh
 cabal run test
 ```
-
+---
 ## Referensi
 
 - [Wikipedia](https://www.wikipedia.org/)
+- [Crypto Corner](https://crypto.interactive-maths.com/)

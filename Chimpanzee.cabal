@@ -1,6 +1,6 @@
 cabal-version:      2.4
 name:               Chimpanzee
-version:            1.0.1
+version:            1.0.2
 synopsis:           Haskell Algorithm Library
 description:        This project aims to implement an algorithm that can be used for anything.
 homepage:           https://github.com/aerphanas/Chimpanzee
@@ -16,9 +16,10 @@ extra-source-files:
                     README.md
 
 library
-    exposed-modules:    Atbash,
+    exposed-modules:    Atbash
                         Rot13
                         Caesar
+                        Affine
     hs-source-dirs:     src
     default-language:   Haskell2010
     build-depends:      base ^>=4.16.3.0
