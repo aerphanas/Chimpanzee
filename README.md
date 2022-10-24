@@ -3,9 +3,9 @@
 [![Haskell CI](https://github.com/aerphanas/Chimpanzee/actions/workflows/haskell.yml/badge.svg)](https://github.com/aerphanas/Chimpanzee/actions/workflows/haskell.yml)
 [![License](https://img.shields.io/badge/License-BSD--3--Clause-important)](https://github.com/DevCapacitor/aerphanas/blob/main/LICENSE)
 ![Haskell Language](https://img.shields.io/badge/Haskell-Haskell2010-informational)
-![Cabal](https://img.shields.io/badge/Cabal-3.2-informational)
-![GHC](https://img.shields.io/badge/GHC-8.10.3-informational)
-![Version](https://img.shields.io/badge/Chimpanzee-0.1.0.0-informational)
+![Cabal](https://img.shields.io/badge/Cabal-3.6-informational)
+![GHC](https://img.shields.io/badge/GHC-9.2.4-informational)
+![Version](https://img.shields.io/badge/Chimpanzee-1.0.2-informational)
 
 ## Table of contents
 

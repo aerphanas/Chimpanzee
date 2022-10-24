@@ -4,7 +4,7 @@
 [![Lisensi](https://img.shields.io/badge/Lisensi-BSD--3--Clause-important)](https://github.com/aerphanas/Chimpanzee/blob/main/LICENSE)
 ![Haskell Language](https://img.shields.io/badge/Haskell-Haskell2010-informational)  ![Cabal](https://img.shields.io/badge/Cabal-3.6-informational)
 ![GHC](https://img.shields.io/badge/GHC-9.2.4-informational)
-![Version](https://img.shields.io/badge/Chimpanzee-0.1.0.0-informational)
+![Version](https://img.shields.io/badge/Chimpanzee-1.0.2-informational)
 
 ## Daftar isi
 
