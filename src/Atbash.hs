@@ -1,6 +1,6 @@
 module Atbash (encrypt,decrypt) where
 
-import qualified Data.Char as DC -- use chr, ord, isAlpha, isUpper
+import qualified Data.Char as DC -- chr, ord, isAlpha, isUpper
 
 encrypt::[Char] -> [Char]
 encrypt = map (DC.chr . doAlg . DC.ord)

@@ -24,7 +24,7 @@ doEncAlg shift x
 doDecAlg::Int -> Int -> Int
 doDecAlg shift x
     | DC.isAlpha . DC.chr $ x = if checkOver then (x + 25) -  (shift + 1) + 2 else x - shift
-    | otherwise               = x -- do algorithm only on alphabetic
+    | otherwise               = x
     where
         checkAlpha = if DC.isUpper . DC.chr $ x then 65 else 97
         checkOver  = (x - shift) < checkAlpha

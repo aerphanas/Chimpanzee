@@ -15,8 +15,9 @@ doEncAlg::Int -> Int
 doEncAlg x
     | DC.isAlpha . DC.chr $ x = if checkOver then (x - 25) +  (13 - 1) else x + 13
     | otherwise               = x -- do algorithm only on alphabetic
-    where checkAlpha = if DC.isUpper . DC.chr $ x then 90 else 122
-          checkOver  = (x + 13) > checkAlpha
+    where
+        checkAlpha = if DC.isUpper . DC.chr $ x then 90 else 122
+        checkOver  = (x + 13) > checkAlpha
 
 -- the calculation is same as encryption but this time we do the opposite
 -- if the number smaller than 'a' (97) and 'A' (65) letter, and do opposite calculation
@@ -24,6 +25,7 @@ doEncAlg x
 doDecAlg::Int -> Int
 doDecAlg x
     | DC.isAlpha . DC.chr $ x = if checkOver then (x + 25) -  (13 + 1) + 2 else x - 13
-    | otherwise               = x -- do algorithm only on alphabetic
-    where checkAlpha = if DC.isUpper . DC.chr $ x then 65 else 97
-          checkOver  = (x - 13) < checkAlpha
+    | otherwise               = x
+    where
+        checkAlpha = if DC.isUpper . DC.chr $ x then 65 else 97
+        checkOver  = (x - 13) < checkAlpha
