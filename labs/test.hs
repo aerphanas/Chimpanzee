@@ -1,9 +1,9 @@
 module Main(main)where
 
-import Atbash
-import Caesar
-import Rot13
-import Affine
+import qualified Chimpanzee.Atbash as Atbash
+import qualified Chimpanzee.Caesar as Caesar
+import qualified Chimpanzee.Rot13 as Rot13
+import qualified Chimpanzee.Affine as Affine
 
 main :: IO()
 main = let

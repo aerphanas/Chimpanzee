@@ -1,4 +1,4 @@
-module Caesar (encrypt,decrypt) where
+module Chimpanzee.Caesar (encrypt,decrypt) where
 
 import qualified Data.Char as DC -- chr, ord, isAlpha, isUpper
 
@@ -16,7 +16,7 @@ doEncAlg::Int -> Int -> Int
 doEncAlg shift x
     | DC.isAlpha . DC.chr $ x = if checkOver then (x - 25) +  (shift - 1) else x + shift
     | otherwise               = x -- do algorithm only on alphabetic
-    where 
+    where
         checkAlpha = if DC.isUpper . DC.chr $ x then 90 else 122
         checkOver  = (x + shift) > checkAlpha
 

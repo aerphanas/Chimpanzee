@@ -1,4 +1,4 @@
-module Atbash (encrypt,decrypt) where
+module Chimpanzee.Atbash (encrypt,decrypt) where
 
 import qualified Data.Char as DC -- chr, ord, isAlpha, isUpper
 

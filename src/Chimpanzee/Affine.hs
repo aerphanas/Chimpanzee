@@ -1,4 +1,4 @@
-module Affine (encrypt, decrypt) where
+module Chimpanzee.Affine (encrypt, decrypt) where
 
 import qualified Data.Char as DC -- chr, ord, isAlpha, isUpper
 import qualified Data.List as DL -- head, filter
@@ -20,7 +20,7 @@ doEncAlg::Int -> Int -> Int -> Int
 doEncAlg a b x
     | DC.isAlpha . DC.chr $ x = doMath + initChar
     | otherwise               = x -- pattern matching to everything except alphabet will be return itself
-    where 
+    where
         initChar = if DC.isUpper $ DC.chr x then 65 else 97
         numChar  = x - initChar
         doMath   = (a * numChar + b) `mod` 26
@@ -35,4 +35,4 @@ doDecAlg a b x
         aInv = DL.head $ DL.filter (\x -> ((a*x) `mod` 26)==1) [0..26]
         initChar = if DC.isUpper $ DC.chr x then 65 else 97
         numChar  = x - initChar
-        doMath   = aInv * (numChar - b) `mod` 26 
+        doMath   = aInv * (numChar - b) `mod` 26

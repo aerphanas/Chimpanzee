@@ -1,4 +1,4 @@
-module Rot13 (encrypt,decrypt) where
+module Chimpanzee.Rot13 (encrypt,decrypt) where
 
 import qualified Data.Char as DC -- chr, ord, isAlpha, isUpper
 
