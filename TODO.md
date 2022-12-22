@@ -1,4 +1,4 @@
-## Classic Chipper List : ##
+# Classic Chipper List
 
 - Atbash (done)
 - Caesar (done)
