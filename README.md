@@ -3,18 +3,19 @@
 [![Haskell CI](https://github.com/aerphanas/Chimpanzee/actions/workflows/haskell.yml/badge.svg)](https://github.com/aerphanas/Chimpanzee/actions/workflows/haskell.yml)
 [![License](https://img.shields.io/badge/License-BSD--3--Clause-important)](https://github.com/DevCapacitor/aerphanas/blob/main/LICENSE)
 ![Haskell Language](https://img.shields.io/badge/Haskell-Haskell2010-informational)
-![Cabal](https://img.shields.io/badge/Cabal-3.6-informational)
+![Cabal](https://img.shields.io/badge/Cabal-3.8-informational)
 ![GHC](https://img.shields.io/badge/GHC-9.0.2-informational)
 ![Version](https://img.shields.io/badge/Chimpanzee-1.0.2-informational)
 
 ## Table of contents
 
-- [Chimpanzee](#chimpanzee)
-  - [Description](#description)
-  - [Prerequisites](#prerequisites)
-  - [Setup](#setup)
-    - [Build](#build)
-    - [Test](#test)
+- [Description](#description)
+- [Prerequisites](#prerequisites)
+- [Setup](#setup)
+  - [Build](#build)
+  - [Test](#test)
+  - [Istall](#install)
+- [Example](#example)
 
 ## Description
 
@@ -29,7 +30,7 @@ to build this software, you must have:
 |Package|Minimum Version|
 |-|-|
 |GHC|9.0.2|
-|Cabal|3.6|
+|Cabal|3.8|
 
 ---
 
