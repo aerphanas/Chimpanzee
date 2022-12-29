@@ -16,8 +16,6 @@
 
 This project aims to implement an algorithm that can be used for anything, this project is licensed bsd 3 clauses
 
----
-
 ## Prerequisites
 
 to build this software, you must have:
@@ -26,8 +24,6 @@ to build this software, you must have:
 |-|-|
 |GHC|9.0.2|
 |Cabal|3.8|
-
----
 
 ## Setup
 
