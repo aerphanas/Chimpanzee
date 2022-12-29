@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/License-BSD--3--Clause-important)](https://github.com/DevCapacitor/aerphanas/blob/main/LICENSE)
 ![Haskell Language](https://img.shields.io/badge/Haskell-Haskell2010-informational)
 ![Cabal](https://img.shields.io/badge/Cabal-3.6-informational)
-![GHC](https://img.shields.io/badge/GHC-9.2.4-informational)
+![GHC](https://img.shields.io/badge/GHC-9.0.2-informational)
 ![Version](https://img.shields.io/badge/Chimpanzee-1.0.2-informational)
 
 ## Table of contents
@@ -28,7 +28,7 @@ to build this software, you must have:
 
 |Package|Minimum Version|
 |-|-|
-|GHC|9.2.4|
+|GHC|9.0.2|
 |Cabal|3.6|
 
 ---
@@ -40,8 +40,6 @@ for now if you want to use this library you can clone the repo using the command
 ```sh
 git clone https://github.com/DevCapacitor/Chimpanzee.git
 ```
-
-and build Library with command
 
 ### Build
 
@@ -55,4 +53,20 @@ cabal build
 
 ```sh
 cabal run test
+```
+
+### Install
+
+```sh
+cabal install --lib
+```
+
+## Example
+
+```sh
+GHCi, version 9.0.2: https://www.haskell.org/ghc/  :? for help
+Loaded GHCi configuration from /home/orpheus/.ghc/ghci.conf
+ghci> import qualified Chimpanzee.Atbash as Atbash
+ghci> Atbash.encrypt "Hello World"
+"Svool Dliow"
 ```
