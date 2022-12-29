@@ -2,10 +2,10 @@ module Chimpanzee.Rot13 (encrypt,decrypt) where
 
 import qualified Data.Char as DC -- chr, ord, isAlpha, isUpper
 
-encrypt::[Char] -> [Char]
+encrypt::String -> String
 encrypt = map (DC.chr . doEncAlg . DC.ord) -- convert Alphabet, do the encription algorithm and give the result
 
-decrypt::[Char] -> [Char]
+decrypt::String -> String
 decrypt = map (DC.chr . doDecAlg . DC.ord) -- do the decryption algorithm
 
 -- checking if alphabet is greater than number and do the calculation

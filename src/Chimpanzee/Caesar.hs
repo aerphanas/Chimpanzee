@@ -2,10 +2,10 @@ module Chimpanzee.Caesar (encrypt,decrypt) where
 
 import qualified Data.Char as DC -- chr, ord, isAlpha, isUpper
 
-encrypt::Int -> [Char] -> [Char]
+encrypt::Int -> String -> String
 encrypt shift = map (DC.chr . doEncAlg shift . DC.ord)
 
-decrypt::Int -> [Char] -> [Char]
+decrypt::Int -> String -> String
 decrypt shift = map (DC.chr . doDecAlg shift . DC.ord)
 
 -- this function will check if the input is Integer of Char

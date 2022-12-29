@@ -3,10 +3,10 @@ module Chimpanzee.Affine (encrypt, decrypt) where
 import qualified Data.Char as DC -- chr, ord, isAlpha, isUpper
 import qualified Data.List as DL -- head, filter
 
-encrypt::Int -> Int -> [Char] -> [Char]
+encrypt::Int -> Int -> String -> String
 encrypt a b = map (DC.chr . doEncAlg a b . DC.ord)
 
-decrypt::Int -> Int -> [Char] -> [Char]
+decrypt::Int -> Int -> String -> String
 decrypt a b = map (DC.chr . doDecAlg a b . DC.ord)
 
 

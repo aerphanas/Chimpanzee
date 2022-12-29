@@ -2,12 +2,12 @@ module Chimpanzee.Atbash (encrypt,decrypt) where
 
 import qualified Data.Char as DC -- chr, ord, isAlpha, isUpper
 
-encrypt::[Char] -> [Char]
+encrypt::String -> String
 encrypt = map (DC.chr . doAlg . DC.ord)
 -- here I change letters to numbers to make it easier for us to make algorithms
 -- after doing the encryption I change the numbers back to letters
 
-decrypt::[Char] -> [Char]
+decrypt::String -> String
 decrypt = encrypt
 -- because of Algorithm we dont need to find the algorithm for decryption
 
