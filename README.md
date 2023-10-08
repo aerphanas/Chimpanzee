@@ -1,3 +1,5 @@
+> Moved to Codeberg
+
 # Chimpanzee
 
 [![Haskell CI](https://github.com/aerphanas/Chimpanzee/actions/workflows/haskell.yml/badge.svg)](https://github.com/aerphanas/Chimpanzee/actions/workflows/haskell.yml)
